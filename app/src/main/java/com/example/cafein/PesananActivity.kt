@@ -29,8 +29,6 @@ class PesananActivity : AppCompatActivity() {
 
     private lateinit var pesananViewModel: PesananViewModel
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesanan)
@@ -46,7 +44,6 @@ class PesananActivity : AppCompatActivity() {
         pesananViewModel.getAllPesanan().observe(this, Observer<List<Pesanan>> {
             adapter.submitList(it)
         })
-
 
         //Ketika Action button di klik
         /*buttonPesanan.setOnClickListener {
@@ -146,12 +143,6 @@ class PesananActivity : AppCompatActivity() {
                 Toast.makeText(this, "Pesanan Diperbarui", Toast.LENGTH_SHORT).show()
                 true
             }
-            /*R.id.tambah_pesanan -> {
-                startActivityForResult(
-                    Intent(this, PesananAddEdit::class.java), PesananActivity.ADD_PESANAN_REQUEST
-                )
-                true
-            }*/
             else -> {
                 super.onOptionsItemSelected(item)
             }
