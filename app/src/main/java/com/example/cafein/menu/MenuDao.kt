@@ -22,10 +22,4 @@ interface MenuDao {
     @Query("SELECT * FROM menu_table ORDER BY id_menu ASC")
     fun getAllMenus(): LiveData<List<Menu>>
 
-/*    @Query("SELECT * FROM menu_table WHERE id_menu=:id_menu")
-    fun getMenus(id_menu: Int): LiveData<List<Menu>>*/
-
-    /*@Query("SELECT * FROM menu_table WHERE id_menu IN (:arg0)")
-    fun searchMenu(): LiveData<List<Menu>>*/
-
 }

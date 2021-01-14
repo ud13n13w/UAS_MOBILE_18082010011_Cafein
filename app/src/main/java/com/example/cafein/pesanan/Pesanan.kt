@@ -16,7 +16,6 @@ data class Pesanan(
     var jumlah_pesanan: Int,
     var total_pesanan: Int,
     var meja: Int
-    //@ColumnInfo(typeAffinity = ColumnInfo.BLOB) val gambar_barang : ByteArray? = null
 ){
     @PrimaryKey(autoGenerate = true) var id_pesanan: Int = 0
 }
