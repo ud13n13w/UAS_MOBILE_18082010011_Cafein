@@ -84,24 +84,6 @@ class MenuAddEdit : AppCompatActivity() {
                 saveMenu()
             }
 
-            /*if (intent.hasExtra(EXTRA_ID)) {
-                val pesanan = Intent(baseContext, PesananAddEdit::class.java)
-
-                pesanan.putExtra(PesananAddEdit.EXTRA_MENUPESANAN, intent.getStringExtra(EXTRA_NAMA))
-                pesanan.putExtra(PesananAddEdit.EXTRA_HARGAPESANAN, intent.getIntExtra(EXTRA_HARGA, 1))
-                pesanan.putExtra(PesananAddEdit.EXTRA_PESANAN_REQUEST, "true")
-
-                Toast.makeText(
-                    this,
-                    "Data terkirim :" + intent.getIntExtra(EXTRA_HARGA, 1).toString(),
-                    Toast.LENGTH_SHORT
-                ).show()
-                startActivity(pesanan)
-                finish()
-            }else{
-                saveMenu()
-            }*/
-
         }
 
     }
