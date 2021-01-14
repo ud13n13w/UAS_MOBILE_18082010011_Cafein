@@ -114,13 +114,6 @@ class MainActivity : AppCompatActivity() {
 
         return when (item?.itemId) {
             //Ketika menu option delete all menu dipilih, maka akan menjalankan function deleteAllNotes()
-            // untuk menghapus semua data note yang tersimpan
-            /*R.id.hapus_menu -> {
-                menuViewModel.deleteAllMenus()
-                menuViewModel.getAllMenus()
-                Toast.makeText(this, "Semua sudah dihapus!", Toast.LENGTH_SHORT).show()
-                true
-            }*/
             R.id.refresh_menu -> {
                 menuViewModel.getAllMenus()
                 Toast.makeText(this, "Menu Diperbarui", Toast.LENGTH_SHORT).show()
