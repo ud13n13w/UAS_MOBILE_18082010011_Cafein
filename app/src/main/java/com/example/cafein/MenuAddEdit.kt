@@ -120,7 +120,8 @@ class MenuAddEdit : AppCompatActivity() {
     private fun saveMenu(){
 
         //Jika data yang dimasukkan masih kosong
-        if (edit_namamenu.text.toString().trim().isBlank() || edit_hargamenu.text.toString().trim().isBlank() ||edit_deskripsi.text.toString().trim().isBlank()) {
+        if (edit_namamenu.text.toString().trim().isBlank() || edit_hargamenu.text.toString().trim().isBlank()
+            ||edit_deskripsi.text.toString().trim().isBlank()) {
             Toast.makeText(this, "Menu kosong!", Toast.LENGTH_SHORT).show()
             return
         }
